@@ -16,6 +16,10 @@ Deliverables
 ### Solution
 Using Apache Kafka and Python-kafka to design Notification system.
 
+### Architecture
+
+![Alt text](Architecture.jpeg?raw=true)
+
 #### Pre-requisite
 
 * JDF/JRE Installation  - ```sudo apt-get install default-jre```
