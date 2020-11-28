@@ -39,7 +39,7 @@ Once the configuration is updated, execute below commands to kickoff the service
     $ sudo systemctl enable kafka
 ```
 
-##### How it works:
+#### How it works:
  * First, create a topic named Target by typing:
 ```
     $ ~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic Target
