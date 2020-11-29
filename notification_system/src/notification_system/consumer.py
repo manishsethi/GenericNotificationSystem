@@ -52,13 +52,9 @@ def send_unknown():
 
 #-Testing for JSON parsing-#
 consumer = KafkaConsumer('Target', bootstrap_servers='104.42.236.61:9092',auto_offset_reset='latest',consumer_timeout_ms=5000, value_deserializer=lambda m: json.loads(m.decode('utf-8')))
-###############################################
-#-END CONSUMER COMMAND WITH DIFFERENT OPTIONS-#
-###############################################
 
-############################################
-#-START LOOP TO READ MSG FROM KAFKA TOPICS-#
-############################################
+
+# START LOOP TO READ MSG FROM KAFKA TOPICS
 for msg in consumer:
     #print (msg.topic, msg.partition, msg.offset, msg.key, msg.value)
     data = msg.value
@@ -73,6 +69,3 @@ for msg in consumer:
     else:
         send_unknown()
     #print (msg)
-##########################################
-#-END LOOP TO READ MSG FROM KAFKA TOPICS-#
-##########################################

@@ -2,4 +2,4 @@
 Contributors
 ============
 
-* Manish Sethi <msethi3@ext.uber.com>
+* Manish Sethi <manish@sethis.in>
