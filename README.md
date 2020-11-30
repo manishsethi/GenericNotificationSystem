@@ -56,7 +56,7 @@ Once the configuration is updated, execute below commands to kickoff the service
 ```
 or
 ```
-    $ python producer.py   # this [script](notification_system/src/notification_system/producer.py) will help you producer for email/slack.
+    $ python producer.py   # this script is @notification_system/src/notification_system/producer.py, it will help you generate producer for email/slack.
 ```
  * Next, you can create a Kafka consumer using the kafka-console-consumer.sh script. It expects the ZooKeeper server’s hostname and port, along with a topic name as arguments.
  The following command consumes messages from Target. Note the use of the --from-beginning flag, which allows the consumption of messages that were published before the consumer was started:
